@@ -34,10 +34,7 @@ Route::get('users/{id}/comments/{comments}',function ($id,$comment){
     dd('comments n'.$comment.' users'.$id);
 });
 
- /* Route::get('blog',function (){
-   //dd('Hi from blog');
-    return redirect()->route('my_new_blog');
-});*/
+
 Route::redirect('blog','new_blog',301);
 Route::redirect('google','https://www.google.ps',301);
 
